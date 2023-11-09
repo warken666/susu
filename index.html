@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Novel Reader</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="menu-icon" onclick="toggleNavbar()">&#9776;</div>
+      <ul class="nav-list" id="navList">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Novel Terbaru</a></li>
+        <li><a href="#">Kategori</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+      </ul>
+    </div>
+
+    <div id="content-container" class="dark-mode">
+      <h1 id="title"></h1>
+      <div id="navButtonContainer" class="container-margin">
+        <button id="prevButton" class="navButton">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div id="numberInputContainer">
+          <input type="text" id="pageNumberInput" placeholder="" />
+          <button id="goButton" class="navButton">Go</button>
+        </div>
+        <button id="nextButton" class="navButton">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div id="displaySetting">
+        <button
+          id="increaseFontSizeButton"
+          class="navButton"
+          onclick="changeFontSize('increase')"
+        >
+          A+
+        </button>
+
+        <button
+          id="decreaseFontSizeButton"
+          class="navButton"
+          onclick="changeFontSize('decrease')"
+        >
+          A-
+        </button>
+      </div>
+
+      <div id="content"></div>
+      <div id="navButtonContainer" class="container-margin">
+        <button id="prevButton" class="navButton">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="nextButton" class="navButton">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="footer">DITERJEMAHKAN DENGAN CHATGPT</div>
+
+    <!-- Isi halaman web Anda akan ditempatkan di sini -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
